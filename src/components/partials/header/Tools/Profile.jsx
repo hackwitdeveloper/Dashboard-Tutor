@@ -22,7 +22,7 @@ const profileLabel =({token}) => {
   
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/getemail?email=${decodedEmail}`);
+        const response = await axios.get(`http://52.206.149.246:3000/getemail?email=${decodedEmail}`);
         const responseData = response.data;
         setUserData(responseData);
       } catch (error) {
