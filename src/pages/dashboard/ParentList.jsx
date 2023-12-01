@@ -6,7 +6,7 @@ import axios from "axios";
 
 const columns = [
     {
-      label: "Namee",
+      label: "Name",
       field: "fname",
     },
     {
