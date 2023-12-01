@@ -26,7 +26,7 @@ function Login({ setToken }) {
                 'Content-Type': 'application/json',
             };
             
-            const response = await axios.post('http://localhost:3000/adminlogin', formData, { headers });
+            const response = await axios.post('http://52.206.149.246:3000/adminlogin', formData, { headers });
             const { token } = response.data;
             
             setToken(token);

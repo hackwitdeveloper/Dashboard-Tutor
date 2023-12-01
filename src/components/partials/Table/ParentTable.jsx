@@ -50,7 +50,7 @@ const ParentTable = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/parentget');
+            const response = await axios.get('http://52.206.149.246:3000/parentget');
 
             if (response.status === 200) {
                 // Add rowIndex to each user object and set it in state
@@ -69,7 +69,7 @@ const ParentTable = () => {
 
     const handleDelete = async (parent_id) => {
         try {
-            const response = await axios.delete(`http://localhost:3000/parentDelete?parent_id=${parent_id}`);
+            const response = await axios.delete(`http://52.206.149.246:3000/parentDelete?parent_id=${parent_id}`);
             console.log(response);
             window.location.reload();
         } catch (error) {

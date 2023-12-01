@@ -14,7 +14,7 @@ const Categories = () => {
 
     const fetchData = async () => {
         try {
-            const Category = await axios.get(`http://localhost:3000/getcategories`);
+            const Category = await axios.get(`http://52.206.149.246:3000/getcategories`);
             const CategoryData = Category.data.token
             
             setCategory(CategoryData);
@@ -28,7 +28,7 @@ const Categories = () => {
     const handleDelete = async (subject) => {
         try {
             
-            await axios.delete(`http://localhost:3000/categoriesDelete?subject=${subject}`);
+            await axios.delete(`http://52.206.149.246:3000/categoriesDelete?subject=${subject}`);
             
            
             setCategory(prevCategories =>
@@ -48,7 +48,7 @@ const Categories = () => {
                             <div className="h-[200px]">
                                 <img
                                     className="  h-full w-full   transition-all duration-300 group-hover:scale-105"
-                                    src={`http://localhost:3000/${category.categoryimage}`}
+                                    src={`http://52.206.149.246:3000/${category.categoryimage}`}
                                     alt="Image"
                                     style={{paddingTop : '10px'}}
                                 />

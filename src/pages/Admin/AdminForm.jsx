@@ -21,7 +21,7 @@ function AdminForm() {
     event.preventDefault();
 
 
-    axios.post("http://localhost:3000/admin", formData)
+    axios.post("http://52.206.149.246:3000/admin", formData)
       .then((response) => {
 
         console.log(response.data);

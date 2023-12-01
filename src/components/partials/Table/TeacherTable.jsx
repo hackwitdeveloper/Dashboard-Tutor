@@ -50,7 +50,7 @@ const TeacherTable = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/teacherget');
+            const response = await axios.get('http://52.206.149.246:3000/teacherget');
 
             if (response.status === 200) {
                 // Add rowIndex to each user object and set it in state
@@ -69,7 +69,7 @@ const TeacherTable = () => {
 
     const handleDelete = async (tutor_id) => {
         try {
-            const response = await axios.delete(`http://localhost:3000/teacherDelete?tutor_id=${tutor_id}`);
+            const response = await axios.delete(`http://52.206.149.246:3000/teacherDelete?tutor_id=${tutor_id}`);
             console.log(response);
             window.location.reload();
         } catch (error) {

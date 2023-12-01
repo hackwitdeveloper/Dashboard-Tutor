@@ -19,7 +19,7 @@ const Students = () => {
         const fetchUserData = async () => {
             try {
 
-                const response = await axios.get(`http://localhost:3000/studentGetData?student_id=${student_ids}`);
+                const response = await axios.get(`http://52.206.149.246:3000/studentGetData?student_id=${student_ids}`);
                 const responseData = response.data;
 
                 setStudent(responseData);

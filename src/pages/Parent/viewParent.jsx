@@ -20,7 +20,7 @@ const Parents = () => {
         const fetchUserData = async () => {
             try {
 
-                const response = await axios.get(`http://localhost:3000/parentGetData?parent_id=${parent_ids}`);
+                const response = await axios.get(`http://52.206.149.246:3000/parentGetData?parent_id=${parent_ids}`);
                 const responseData = response.data;
                 //console.log(responseData)
                 setParent(responseData);

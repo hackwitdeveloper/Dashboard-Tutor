@@ -50,7 +50,7 @@ const SubTutorTable = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/gettutorplan');
+            const response = await axios.get('http://52.206.149.246:3000/gettutorplan');
 
             if (response.status === 200) {
                 // Add rowIndex to each user object and set it in state

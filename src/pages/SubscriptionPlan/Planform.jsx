@@ -28,7 +28,7 @@ const handleInputChange = (event) => {
     formDataToSend.append("count", formData.count);
   
     try {
-      const response = await axios.post("http://localhost:3000/plan", formDataToSend, {
+      const response = await axios.post("http://52.206.149.246:3000/plan", formDataToSend, {
         headers: {
           "Content-Type": "multipart/form-data"
         }

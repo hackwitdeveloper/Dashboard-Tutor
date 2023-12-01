@@ -33,7 +33,7 @@ const ParentList = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/parentget');
+            const response = await axios.get('http://52.206.149.246:3000/parentget');
 
            const responseData =  response.data
 
@@ -45,7 +45,7 @@ const ParentList = () => {
         }
 
         try {
-            const response = await axios.get('http://localhost:3000/studentget');
+            const response = await axios.get('http://52.206.149.246:3000/studentget');
 
            const responseData =  response.data
 
