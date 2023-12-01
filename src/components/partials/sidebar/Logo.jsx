@@ -5,9 +5,7 @@ import useSidebar from "@/hooks/useSidebar";
 import useSemiDark from "@/hooks/useSemiDark";
 import useSkin from "@/hooks/useSkin";
 
-// import images
-import MobileLogo from "@/assets/logo.png";
-import MobileLogoWhite from "@/assets/logo.png";
+
 
 const SidebarLogo = ({ menuHover }) => {
   const [isDark] = useDarkMode();
