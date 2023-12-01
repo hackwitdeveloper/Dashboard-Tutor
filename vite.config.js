@@ -14,7 +14,9 @@ export default defineConfig({
       },
     ],
   },
-
+  build: {
+    chunkSizeWarningLimit: 1600, 
+  },
   plugins: [
     rollupReplace({
       preventAssignment: true,
